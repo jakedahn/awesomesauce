@@ -1,0 +1,78 @@
+#sidebar
+  .search
+    %form{"accept-charset" => "utf-8", :action => "search", :method => "post"}
+      %fieldset
+        %label{:for => "search_field"} Search
+        %input#search_field{:name => "search", :type => "text", :value => ""}/
+  %h3 Manage Compute
+  %ul.sub_nav
+    %li
+      %a{:href => "/"} Dashboard
+    %li
+      %a{:href => "/manage_instances"} Manage Instances
+    %li
+      %a{:href => "/manage_volumes"} Manage Volumes
+    %li
+      %a.active{:href => "/manage_security"} Manage Security
+    %li
+      %a{:href => "/manage_vpn"} Manage VPN
+#main
+  #page_header
+    %h2
+      %span Compute:
+      Security
+    %p.desc
+      %span &mdash;
+      You can manage emergency security situations on this page.
+    %a.more_link{:href => "#"} More Info
+    #more
+      .block
+        %h3 Launch New Instance
+        %p Select an image from which you would like to launch a new server instance from.
+        %a.fancy_btn{:href => "#"}
+          %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
+          %span Launch Instance
+      .block
+        %h3 Manage Volumes
+        %p View and manage volumes which can be attached to instances as disk space.
+        %a.fancy_btn{:href => "#"}
+          %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
+          %span Launch Instance
+      .block.last
+        %h3 Manage Security
+        %p Lock down your OpenStack cloud in case of security breach or vulnerability.
+        %a.fancy_btn{:href => "#"}
+          %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
+          %span Launch Instance
+  .main_content
+    #security
+      .scenario.narrow
+        .table_title.narrow
+          %h3 Disable Project/User
+        %form#disable_project_credentials{"accept-charset" => "utf-8", :action => "#", :method => "post"}
+          %fieldset
+            %label{:for => "id_project_name"} Project name
+            %input#id_project_name{:name => "project_name", :type => "text"}/
+            %input{:type => "submit", :value => "Turn off user/project"}/
+      .scenario.narrow
+        .table_title.narrow
+          %h3 Block IP Range
+        %form#disable_ip_range{"accept-charset" => "utf-8", :action => "#", :method => "post"}
+          %fieldset
+            %input{:type => "text"}/
+            %span.dash
+              &mdash;
+            %input{:type => "text"}/
+            %input{:type => "submit", :value => "Block IP Range"}/
+    .scenario.narrow
+      .table_title.narrow
+        %h3 Turn off all Public IPs
+      %form{"accept-charset" => "utf-8", :action => "#", :method => "post"}
+        %fieldset
+          %input{:name => "turn_off_ips", :type => "submit", :value => "Turn off Public IPs"}/
+    .scenario.narrow
+      .table_title.narrow
+        %h3 Disable VPN
+      %form{"accept-charset" => "utf-8", :action => "#", :method => "post"}
+        %fieldset
+          %input{:name => "block_vpn", :type => "submit", :value => "Turn off VPNs"}/

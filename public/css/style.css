@@ -264,7 +264,7 @@ h1 a{
 	padding-right: 21px;
 }
 
-.search input[type="text"] {
+.search input[type="text"], .scenario form input[type="text"] {
 	margin-left: -1px;
 	border: 1px solid #ccc;
 	height: 31px;
@@ -274,7 +274,7 @@ h1 a{
 	margin-bottom: 15px;
 }
 
-.search input[type="text"]:focus, .modal_window input:focus, .modal_window textarea:focus {
+.search input[type="text"]:focus, .modal_window input:focus, .modal_window textarea:focus, .scenario form input[type="text"]:focus {
 	outline: none;
 	box-shadow:0 0 3px #41bad4;
     -moz-box-shadow:0 0 3px #41bad4;
@@ -575,13 +575,6 @@ body#foo {
 	padding-top: 32px;
 }
 
-
-
-
-
-
-
-
 .modal_window {
 	width: 910px;
 	background: #f2f2f2;
@@ -767,7 +760,7 @@ ol li.first a {
 }
 
 
-.modal_window .continue_link {
+.modal_window .continue_link, .scenario form input[type="submit"] {
 	background: url(../images/modal_btn.png) top left repeat-x;
 	padding: 10px;
 	float: right;
@@ -779,14 +772,61 @@ ol li.first a {
 	color: #6a6a6a;
 }
 
-.modal_window .continue_link:hover {
+.modal_window .continue_link:hover, .scenario form input[type="submit"]:hover {
 	text-decoration: underline;
 	background-position: 0 -35px;
 }
 
-.modal_window .continue_link:active {
+.modal_window .continue_link:active, .scenario form input[type="submit"]:active {
 	background-position: 0 -105px;
 }
+
+.scenario {
+	background-color: #f8f8f8;
+	border: 1px solid #f1f1f1;
+	float: left;
+	margin-bottom: 25px;
+	width: 339px;
+	margin-right: 20px;
+	min-height: 250px;
+}
+
+.scenario form {
+	padding: 89px 20px 20px;
+}
+
+.scenario form input[type="submit"] {
+	font-size: 11px;
+	padding-bottom: 20px;
+	width: auto;
+	cursor: pointer;
+}
+
+#security input[type="text"] {
+	width: 284px;
+}
+
+#security #disable_ip_range input[type="text"] {
+	width: 119px;
+}
+
+.dash {
+	float: left;
+	margin-top: 9px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#security label {
+	clear: both;
+	float: left;
+	margin-bottom: 10px;
+}
+
+
+
+
+
 
 
 
