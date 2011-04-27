@@ -1,0 +1,36 @@
+.modal_window
+  %h3
+    %span Compute:
+    Launch Instance
+  .left
+    .fields
+      .field
+        %label{:for => "instance_count"} Number of Instances:
+        %input#instance_count{:name => "instance_count", :type => "text", :value => ""}/
+      .field
+        %label{:for => "instance_count"} Instance Size:
+        %input#instance_count{:name => "instance_count", :type => "text", :value => ""}/
+      .field
+        %label{:for => "user_data"} User Data:
+        %textarea#user_data{:cols => "40", :name => "user_data", :rows => "8"}
+      .field
+        %label{:for => "preferred_zone"} Preferred Zone:
+        %select#preferred_zone{:name => "preferred_zone"}
+          %option{:value => "option1"} Zone 1
+          %option{:value => "option2"} Zone 2
+  .right
+    %p This is a description of whatever is happening in the form on the left, fill it with pertinent information.
+    %p This is a description of whatever is happening in the form on the left, fill it with pertinent information.
+    %p This is a description of whatever is happening in the form on the left, fill it with pertinent information.
+  .controls
+    %a.back_link{:href => "#"} &laquo; Back
+    %ol.steps
+      %li.complete.first
+        %a#one{:href => "#"} 1. Choose Image
+      %li.active
+        %a#two{:href => "#"} 2. Instance Details
+      %li
+        %a#three{:href => "#"} 3. Select Keypair
+      %li.last
+        %a#four{:href => "#"} 4. Review Details
+    %a.continue_link{:href => "#"} Continue &raquo;

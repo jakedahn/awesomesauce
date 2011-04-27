@@ -1,0 +1,198 @@
+#sidebar
+  .search
+    %form{"accept-charset" => "utf-8", :action => "search", :method => "post"}
+      %fieldset
+        %label{:for => "search_field"} Search
+        %input#search_field{:name => "search", :type => "text", :value => ""}/
+  %h3 Manage Compute
+  %ul.sub_nav
+    %li
+      %a{:href => "/"} Dashboard
+    %li
+      %a{:href => "/manage_instances"} Manage Instances
+    %li
+      %a.active{:href => "/manage_volumes"} Manage Volumes
+    %li
+      %a{:href => "/manage_security"} Manage Security
+    %li
+      %a{:href => "/manage_vpn"} Manage VPN
+#main
+  #page_header
+    %h2
+      %span Compute:
+      Volumes
+    %p.desc
+      %span &mdash;
+      Volumes are block storage which can be mounted on an instance.
+    %a.more_link{:href => "#"} More Info
+    #more
+      .block
+        %h3 Add New Volume
+        %p Create a new volume by adding your desired size, and location foo bar baz.
+        %a.fancy_btn{:href => "#"}
+          %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
+          %span Add New Volume
+      .block
+        %h3 Format Volume
+        %p You can format a volume to ext2, ext3, ext4, or other popular filesystems.
+        %a.fancy_btn{:href => "#"}
+          %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
+          %span Format Volume
+      .block.last
+        %h3 Volume Snapshots
+        %p You can schedule periodic snapshots for a volume, or run a one-time snapshot.
+        %a.fancy_btn{:href => "#"}
+          %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
+          %span Take Snapshot
+  .main_content
+    .table_title.wide
+      %h3 Volumes
+      .search
+        %form{:action => "", :method => "post"}
+          %fieldset
+            %label{:for => "table_search"} Search
+            %input#table_search{:name => "search", :type => "text", :value => ""}/
+    %table#instances
+      %tr#headings
+        %th ID
+        %th Host
+        %th User
+        %th Size
+        %th Status
+        %th Device
+        %th Actions
+      %tbody.main
+        %tr.odd
+          %td vol-0cea
+          %td host001
+          %td jakedahn
+          %td 5GB
+          %td available
+          %td none
+          %td.actions
+            %ul
+              %li
+                %a{:href => "#"} Detach
+              %li
+                %a{:href => "#"} Destroy
+        %tr.even
+          %td vol-0ceb
+          %td host001
+          %td jakedahn
+          %td 5GB
+          %td available
+          %td none
+          %td.actions
+            %ul
+              %li
+                %a{:href => "#"} Detach
+              %li
+                %a{:href => "#"} Destroy
+        %tr.odd
+          %td vol-0cec
+          %td host001
+          %td jakedahn
+          %td 5GB
+          %td available
+          %td none
+          %td.actions
+            %ul
+              %li
+                %a{:href => "#"} Detach
+              %li
+                %a{:href => "#"} Destroy
+        %tr.even
+          %td vol-0ced
+          %td host001
+          %td jakedahn
+          %td 5GB
+          %td available
+          %td none
+          %td.actions
+            %ul
+              %li
+                %a{:href => "#"} Detach
+              %li
+                %a{:href => "#"} Destroy
+        %tr.odd
+          %td vol-0cee
+          %td host001
+          %td jakedahn
+          %td 5GB
+          %td available
+          %td none
+          %td.actions
+            %ul
+              %li
+                %a{:href => "#"} Detach
+              %li
+                %a{:href => "#"} Destroy
+        %tr.even
+          %td vol-0cef
+          %td host001
+          %td jakedahn
+          %td 5GB
+          %td available
+          %td none
+          %td.actions
+            %ul
+              %li
+                %a{:href => "#"} Detach
+              %li
+                %a{:href => "#"} Destroy
+        %tr.odd
+          %td vol-0ceg
+          %td host001
+          %td jakedahn
+          %td 5GB
+          %td available
+          %td none
+          %td.actions
+            %ul
+              %li
+                %a{:href => "#"} Detach
+              %li
+                %a{:href => "#"} Destroy
+        %tr.even
+          %td vol-0ceh
+          %td host001
+          %td jakedahn
+          %td 15GB
+          %td available
+          %td none
+          %td.actions
+            %ul
+              %li
+                %a{:href => "#"} Detach
+              %li
+                %a{:href => "#"} Destroy
+        %tr.odd
+          %td vol-0cei
+          %td host001
+          %td jakedahn
+          %td 10GB
+          %td
+            Attached to Instance:
+            %a{:href => "#"} i-000b283
+          %td /dev/vdb
+          %td.actions
+            %ul
+              %li
+                %a{:href => "#"} Detach
+              %li
+                %a{:href => "#"} Destroy
+        %tr.even
+          %td vol-0cej
+          %td host001
+          %td jakedahn
+          %td 10GB
+          %td
+            Attached to Instance:
+            %a{:href => "#"} i-000b283
+          %td /dev/vdc
+          %td.actions
+            %ul
+              %li
+                %a{:href => "#"} Detach
+              %li
+                %a{:href => "#"} Destroy
