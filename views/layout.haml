@@ -7,12 +7,37 @@
     %meta{:name=>"Description", :content=>"description"}
     
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js", :type => "text/javascript", :charset => "utf-8"}
+    %script{:src => "/js/jquery.quicksearch.js", :type => "text/javascript", :charset => "utf-8"}
     %script{:src => "/js/application.js", :type => "text/javascript", :charset => "utf-8"}
     
     %link{:rel=>"stylesheet", :href=>"/css/style.css", :media=>"screen"}
     
   %body
-    %div#wrapper        
+    %div#wrapper 
+      #header
+        %h1
+          %a{:href => "#"} AwesomeSauce
+        #login.large-rounded
+          %form{"accept-charset" => "utf-8", :action => "login", :method => "post"}
+            %fieldset
+              %label{:for => "username"} Username
+              %input#username.small-rounded{:name => "username", :type => "text", :value => ""}/
+              %label{:for => "password"} Password
+              %input#password.small-rounded{:name => "password", :type => "text", :value => ""}/
+              %input.small-rounded{:type => "submit", :value => "Login"}/
+          %ul#alternate_links
+            %li
+              %a{:href => "#"} Forgot Password?
+            %li
+              %a{:href => "#"} Register
+        #nav
+          %ul#main_nav
+            %li
+              %a{:href => "/"} Dashboard
+            %li
+              %a.active{:href => "/compute_dashboard"} Compute
+            %li
+              %a{:href => "/objectstore_dashboard"} Object Store
       %div#content
         = yield
       %div#footer
