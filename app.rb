@@ -33,6 +33,9 @@ module SinatraApp
       haml :manage_vpn
     end
 
+    get '/modal' do
+      haml :modal, :layout => false
+    end
 
 
 
