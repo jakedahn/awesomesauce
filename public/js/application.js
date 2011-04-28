@@ -16,4 +16,26 @@ $(function(){
     e.preventDefault();
   })
   
+  $(".modal_window").hide()
+  
+  $('a.fancy_btn').click(function(e) {
+		e.preventDefault();
+	
+		var maskHeight = $(document).height();
+		var maskWidth = $(window).width();
+	
+		$('#mask').css({'width':maskWidth,'height':maskHeight});
+		$('#mask').fadeTo(500, 0.7);	
+	
+		var winH = $(window).height();
+		var winW = $(window).width();
+              
+		$(".modal_window").css('top',  winH/2-$(".modal_window").height()/2);
+		$(".modal_window").css('left', winW/2-$(".modal_window").width()/2);
+	
+		$(".modal_window").fadeIn(1000); 
+	
+	});
+	
+  
 })

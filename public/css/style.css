@@ -600,8 +600,9 @@ body#foo {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	margin: 0 auto 0 75px;
 	float: left;
+	z-index: 9999 !important;
+	position: relative;
 }
 
 .modal_window h3 {
@@ -836,6 +837,16 @@ ol li.first a {
 	float: left;
 	margin-bottom: 10px;
 }
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+
 
 
 
