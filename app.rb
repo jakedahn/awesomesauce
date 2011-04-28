@@ -37,6 +37,9 @@ module SinatraApp
       haml :modal, :layout => false
     end
 
+    get '/login_sample' do
+      haml :login_sample, :layout => false
+    end
 
 
   end

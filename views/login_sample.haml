@@ -1,0 +1,176 @@
+!!! 5
+%html
+  %head
+    %meta{:"http-equiv"=>"Content-Type", :content => "text/html; charset=utf-8" }
+    %title title
+    %meta{:name=>"Robots", :content=>"index,all"}
+    %meta{:name=>"Description", :content=>"description"}
+    
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js", :type => "text/javascript", :charset => "utf-8"}
+    %script{:src => "/js/jquery.quicksearch.js", :type => "text/javascript", :charset => "utf-8"}
+    %script{:src => "/js/application.js", :type => "text/javascript", :charset => "utf-8"}
+    
+    %link{:rel=>"stylesheet", :href=>"/css/style.css", :media=>"screen"}
+    
+  %body
+    %div#wrapper 
+      #header
+        %h1
+          %a{:href => "#"} AwesomeSauce
+        #login.large-rounded.show
+          %form{"accept-charset" => "utf-8", :action => "login", :method => "post"}
+            %fieldset
+              %label{:for => "username"} Username
+              %input#username.small-rounded{:name => "username", :type => "text", :value => ""}/
+              %label{:for => "password"} Password
+              %input#password.small-rounded{:name => "password", :type => "text", :value => ""}/
+              %input.small-rounded{:type => "submit", :value => "Login"}/
+          %ul#alternate_links
+            %li
+              %a{:href => "#"} Forgot Password?
+            %li
+              %a{:href => "#"} Register
+        #nav
+          %ul#main_nav
+            %li
+              %a{:href => "/"} Dashboard
+            %li
+              %a.active{:href => "/compute_dashboard"} Compute
+            %li
+              %a{:href => "/objectstore_dashboard"} Object Store
+      %div#content
+        #sidebar
+          .search
+            %form{"accept-charset" => "utf-8", :action => "search", :method => "post"}
+              %fieldset
+                %label{:for => "search_field"} Search
+                %input#search_field{:name => "search", :type => "text", :value => ""}/
+          %h3 Manage Compute
+          %ul.sub_nav
+            %li
+              %a{:href => "/"} Dashboard
+            %li
+              %a{:href => "/manage_instances"} Manage Instances
+            %li
+              %a{:href => "/manage_volumes"} Manage Volumes
+            %li
+              %a{:href => "/manage_security"} Manage Security
+            %li
+              %a.active{:href => "/manage_vpn"} Manage VPN
+        #main
+          #page_header
+            %h2
+              %span Compute:
+              VPN
+            %p.desc
+              %span &mdash;
+              Monitor, send credentials, restart, or terminate VPN for instances.
+            %a.more_link{:href => "#"} More Info
+            #more
+              .block
+                %h3 Launch New Instance
+                %p Select an image from which you would like to launch a new server instance from.
+                %a.fancy_btn{:href => "#"}
+                  %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
+                  %span Launch Instance
+              .block
+                %h3 Manage Volumes
+                %p View and manage volumes which can be attached to instances as disk space.
+                %a.fancy_btn{:href => "#"}
+                  %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
+                  %span Launch Instance
+              .block.last
+                %h3 Manage Security
+                %p Lock down your OpenStack cloud in case of security breach or vulnerability.
+                %a.fancy_btn{:href => "#"}
+                  %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
+                  %span Launch Instance
+          .main_content
+            .table_title.wide
+              %h3 Instances
+              .search
+                %form{:action => "", :method => "post"}
+                  %fieldset
+                    %label{:for => "table_search"} Search
+                    %input#table_search{:name => "search", :type => "text", :value => ""}/
+            %table#instances
+              %tr#headings
+                %th Project
+                %th Instance
+                %th Created
+                %th IP
+                %th Public IP
+                %th State
+                %th Actions
+              %tbody.main
+                %tr.odd.running
+                  %td jaketest
+                  %td i-0284hf3
+                  %td 2011-04-07T17:58:01Z
+                  %td 10.1.30.2
+                  %td None
+                  %td Running
+                  %td.actions
+                    %ul
+                      %li
+                        %a{:href => "#"} Terminate
+                      %li
+                        %a{:href => "#"} Restart
+                      %li
+                        %a{:href => "#"} Log
+                      %li
+                        %a{:href => "#"} Send Credentials
+                %tr.even.running
+                  %td jaketest
+                  %td i-3oubrf
+                  %td 2011-05-11T17:58:01Z
+                  %td 10.1.30.5
+                  %td None
+                  %td Running
+                  %td.actions
+                    %ul
+                      %li
+                        %a{:href => "#"} Terminate
+                      %li
+                        %a{:href => "#"} Restart
+                      %li
+                        %a{:href => "#"} Log
+                      %li
+                        %a{:href => "#"} Send Credentials
+              %tr.odd.running
+                %td jaketest
+                %td i-0284hf3
+                %td 2011-04-07T17:58:01Z
+                %td 10.1.30.2
+                %td None
+                %td Running
+                %td.actions
+                  %ul
+                    %li
+                      %a{:href => "#"} Terminate
+                    %li
+                      %a{:href => "#"} Restart
+                    %li
+                      %a{:href => "#"} Log
+                    %li
+                      %a{:href => "#"} Send Credentials
+              %tr.even.running
+                %td jaketest
+                %td i-3oubrf
+                %td 2011-05-11T17:58:01Z
+                %td 10.1.30.5
+                %td None
+                %td Running
+                %td.actions
+                  %ul
+                    %li
+                      %a{:href => "#"} Terminate
+                    %li
+                      %a{:href => "#"} Restart
+                    %li
+                      %a{:href => "#"} Log
+                    %li
+                      %a{:href => "#"} Send Credentials
+        
+      %div#footer
+        &copy; 2011 Jake Dahn
