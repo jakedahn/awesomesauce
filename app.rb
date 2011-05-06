@@ -22,7 +22,7 @@ module SinatraApp
     end
 
     get '/manage_volumes' do
-      haml :manage_volumes
+      haml :manage_volumeswasw
     end
 
     get '/manage_security' do
@@ -41,6 +41,14 @@ module SinatraApp
       haml :login_sample, :layout => false
     end
 
+    # Object Store Pages
+    
+    get '/objectstore_dashboard' do
+      haml :objectstore_dashboard
+    end
+    
+    
+    
 
   end
 end
