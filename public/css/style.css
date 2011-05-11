@@ -527,7 +527,7 @@ tr.odd:hover, tr.even:hover {
 }
 
 table tr.odd.good td {
-	border: 1px solid #c2ffb2;
+	border: 1px solid #92fd75;
 }
 
 table tr.even.good td {
