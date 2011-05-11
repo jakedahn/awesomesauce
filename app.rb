@@ -47,6 +47,17 @@ module SinatraApp
       haml :objectstore_dashboard
     end
     
+    get '/manage_rings' do
+      haml :manage_rings
+    end
+    
+    get '/manage_devices' do
+      haml :manage_devices
+    end
+
+    get '/manage_accounts' do
+      haml :manage_accounts
+    end
     
     
 
