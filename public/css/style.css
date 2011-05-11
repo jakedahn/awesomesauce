@@ -31,7 +31,7 @@ ul, li {
 }
 
 #wrapper {
-	width: 960px;
+	width: 985px;
 	margin: 0 auto;
 }
 
@@ -458,8 +458,12 @@ a.more_link {
 	width: 308px;
 }
 
-.wide {
+.table_title.wide {
 	width: 679px;
+}
+
+table.wide {
+	width: 711px;
 }
 
 .table_title {
@@ -521,6 +525,31 @@ tr, .good, .bad, .medium {
 tr.odd:hover, tr.even:hover {
 	background: #eee;
 }
+
+table tr.odd.good td {
+	border: 1px solid #c2ffb2;
+}
+
+table tr.even.good td {
+	border: 1px solid #88f06d;
+}
+
+table tr.odd.bad td {
+	border: 1px solid #ffb7b8;
+}
+
+table tr.even.bad td {
+	border: 1px solid #fba7a9;
+}
+
+table tr.odd.medium td {
+	border: 1px solid #f8e400;
+}
+
+table tr.even.medium td {
+	border: 1px solid #f0dd00;
+}
+
 
 tr.even {
 	background: #f5f5f5;
