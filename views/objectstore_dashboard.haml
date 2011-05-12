@@ -4,141 +4,191 @@
       %fieldset
         %label{:for => "search_field"} Search
         %input#search_field{:name => "search", :type => "text", :value => ""}/
-  %h3 Manage Objectstore
+  %h3 Manage Compute
   %ul.sub_nav
     %li
-      %a.active{:href => "/objectstore_dashboard"} Dashboard
+      %a.active{:href => "/"} Dashboard
     %li
-      %a{:href => "/manage_accounts"} Manage Accounts
+      %a{:href => "/manage_instances"} Manage Instances
     %li
-      %a{:href => "/manage_devices"} Manage Devices
+      %a{:href => "/manage_volumes"} Manage Volumes
     %li
-      %a{:href => "/manage_rings"} Manage Rings
+      %a{:href => "/manage_security"} Manage Security
+    %li
+      %a{:href => "/manage_vpn"} Manage VPN
 #main
   #page_header
     %h2
       %span Dashboard:
-      Objectstore Overview
+      Cloud Overview
     %p.desc
       %span &mdash;
-      General view of Objectstore.
+      This is the general view of your cloud.
     %a.more_link{:href => "#"} More Info
     #more
       .block
-        %h3 Add New Device
-        %p Select an inactive device to be added to a ring.
+        %h3 Launch New Instance
+        %p Select an image from which you would like to launch a new server instance from.
         %a.fancy_btn{:href => "#"}
           %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
-          %span Add New Device
+          %span Launch Instance
       .block
-        %h3 Add New Ring
-        %p Select a group of nodes of which you would like to create a new ring.
+        %h3 Manage Volumes
+        %p View and manage volumes which can be attached to instances as disk space.
         %a.fancy_btn{:href => "#"}
           %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
-          %span Add New Ring
+          %span Launch Instance
       .block.last
-        %h3 Distribute Ring
-        %p Copy the ring to all swift nodes so they are in sync.
+        %h3 Manage Security
+        %p Lock down your OpenStack cloud in case of security breach or vulnerability.
         %a.fancy_btn{:href => "#"}
           %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
-          %span Organize Rings
+          %span Launch Instance
   .main_content
-    .table_title.wide
-      %h3 Node Health
-      .search
-        %form{:action => "", :method => "post"}
-          %fieldset
-            %label{:for => "table_search"} Search
-            %input#table_search{:name => "search", :type => "text", :value => ""}/
-    %table.wide
-      %tr
-        %th ID
-        %th Weight
-        %th Zone
-        %th Port
-        %th Device
-        %th Meta
-        %tr.odd.bad
-          %td node001
-          %td 80%
-          %td west
-          %td 11000
-          %td sdb1
-          %td n/a
+    .dash_block
+      .table_title.narrow
+        %h3 Health
+        .search
+          %form{:action => "", :method => "post"}
+            %fieldset
+              %label{:for => "table_search"} Search
+              %input#table_search{:name => "search", :type => "text", :value => ""}/
+      %table#health_table
+        %tr
+          %th Hostname
+          %th{:colspan => "3"} Health
+          %tr.odd.bad
+            %td host0003
+            %td{:colspan => "3"}
+              bad
+              %a.more_link{:href => "#"} More Info
+          %tr.more
+            %th Load
+            %th RAM
+            %th Disk
+            %th VMs
+          %tr.more
+            %td 0.16, 0.23, 0.31
+            %td 7.3gb of 12gb
+            %td 752gb of 1200gb
+            %td 17
         %tr.even.bad
-          %td node001
-          %td 80%
-          %td west
-          %td 11000
-          %td sdb1
-          %td n/a
+          %td host0006
+          %td{:colspan => "3"}
+            bad
+            %a.more_link{:href => "#"} More Info
+        %tr.more
+          %th Load
+          %th RAM
+          %th Disk
+          %th VMs
+        %tr.more
+          %td 0.16, 0.23, 0.31
+          %td 7.3gb of 12gb
+          %td 752gb of 1200gb
+          %td 17
         %tr.odd.medium
-          %td node001
-          %td 80%
-          %td west
-          %td 11000
-          %td sdb1
-          %td n/a
+          %td host0005
+          %td{:colspan => "3"}
+            medium
+            %a.more_link{:href => "#"} More Info
+        %tr.more
+          %th Load
+          %th RAM
+          %th Disk
+          %th VMs
+        %tr.more
+          %td 0.16, 0.23, 0.31
+          %td 7.3gb of 12gb
+          %td 752gb of 1200gb
+          %td 17
         %tr.even.medium
-          %td node001
-          %td 80%
-          %td west
-          %td 11000
-          %td sdb1
-          %td n/a
+          %td host0005
+          %td{:colspan => "3"}
+            medium
+            %a.more_link{:href => "#"} More Info
+        %tr.more
+          %th Load
+          %th RAM
+          %th Disk
+          %th VMs
+        %tr.more
+          %td 0.16, 0.23, 0.31
+          %td 7.3gb of 12gb
+          %td 752gb of 1200gb
+          %td 17
+      
         %tr.odd.good
-          %td node001
-          %td 80%
-          %td west
-          %td 11000
-          %td sdb1
-          %td n/a
+          %td host0001
+          %td{:colspan => "3"}
+            good
+            %a.more_link{:href => "#"} More Info
+        %tr.more
+          %th Load
+          %th RAM
+          %th Disk
+          %th VMs
+        %tr.more
+          %td 0.16, 0.23, 0.31
+          %td 7.3gb of 12gb
+          %td 752gb of 1200gb
+          %td 17
         %tr.even.good
-          %td node001
-          %td 80%
-          %td west
-          %td 11000
-          %td sdb1
-          %td n/a
-        %tr.odd.good
-          %td node001
-          %td 80%
-          %td west
-          %td 11000
-          %td sdb1
-          %td n/a
-        %tr.even.good
-          %td node001
-          %td 80%
-          %td west
-          %td 11000
-          %td sdb1
-          %td n/a
-        %tr.odd.good
-          %td node001
-          %td 80%
-          %td west
-          %td 11000
-          %td sdb1
-          %td n/a
-        %tr.even.good
-          %td node001
-          %td 80%
-          %td west
-          %td 11000
-          %td sdb1
-          %td n/a
-        %tr.odd.good
-          %td node001
-          %td 80%
-          %td west
-          %td 11000
-          %td sdb1
-          %td n/a
-        %tr.even.good
-          %td node001
-          %td 80%
-          %td west
-          %td 11000
-          %td sdb1
-          %td n/a
+          %td host0002
+          %td{:colspan => "3"}
+            good
+            %a.more_link{:href => "#"} More Info
+        %tr.more
+          %th Load
+          %th RAM
+          %th Disk
+          %th VMs
+        %tr.more
+          %td 0.16, 0.23, 0.31
+          %td 7.3gb of 12gb
+          %td 752gb of 1200gb
+          %td 17
+    .dash_block
+      .table_title.narrow
+        %h3 Account Activity
+      %table#account_activity
+        %tr
+          %th User
+          %th Bandwidth
+          %th Actions
+        %tr.odd
+          %td jakedahn
+          %td 23GB
+          %td.actions
+            %ul
+              %li
+                %a{:href => "#"} Warn
+              %li
+                %a{:href => "#"} Edit
+        %tr.even
+          %td foo
+          %td 20GB
+          %td.actions
+            %ul
+              %li
+                %a{:href => "#"} Warn
+              %li
+                %a{:href => "#"} Edit
+        %tr.odd
+          %td jakedahn
+          %td 23GB
+          %td.actions
+            %ul
+              %li
+                %a{:href => "#"} Warn
+              %li
+                %a{:href => "#"} Edit
+        %tr.even
+          %td foo
+          %td 20GB
+          %td.actions
+            %ul
+              %li
+                %a{:href => "#"} Warn
+              %li
+                %a{:href => "#"} Edit

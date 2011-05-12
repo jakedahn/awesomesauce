@@ -7,13 +7,11 @@
   %h3 Manage Objectstore
   %ul.sub_nav
     %li
-      %a.active{:href => "/objectstore_dashboard"} Dashboard
+      %a{:href => "/objectstore_dashboard"} Dashboard
     %li
       %a{:href => "/manage_accounts"} Manage Accounts
     %li
-      %a{:href => "/manage_devices"} Manage Devices
-    %li
-      %a{:href => "/manage_rings"} Manage Rings
+      %a.active{:href => "/manage_rings"} Manage Rings
 #main
   #page_header
     %h2
@@ -41,10 +39,10 @@
         %p Copy the ring to all swift nodes so they are in sync.
         %a.fancy_btn{:href => "#"}
           %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
-          %span Organize Rings
+          %span Distribute Ring
   .main_content
     .table_title.wide
-      %h3 Node Health
+      %h3 Rings
       .search
         %form{:action => "", :method => "post"}
           %fieldset
@@ -58,87 +56,184 @@
         %th Port
         %th Device
         %th Meta
+        %th Actions
         %tr.odd.bad
-          %td node001
+          %td ring001
           %td 80%
           %td west
           %td 11000
           %td sdb1
           %td n/a
+          %td.actions 
+            %ul
+              %li 
+                %a{:href => "#"} Delete
+              %li 
+                %a{:href => "#"} Edit
+              %li 
+                %a{:href => "#"} Distribute
         %tr.even.bad
-          %td node001
+          %td ring001
           %td 80%
           %td west
           %td 11000
           %td sdb1
           %td n/a
+          %td.actions 
+            %ul
+              %li 
+                %a{:href => "#"} Delete
+              %li 
+                %a{:href => "#"} Edit
+              %li 
+                %a{:href => "#"} Distribute
         %tr.odd.medium
-          %td node001
+          %td ring001
           %td 80%
           %td west
           %td 11000
           %td sdb1
           %td n/a
+          %td.actions 
+            %ul
+              %li 
+                %a{:href => "#"} Delete
+              %li 
+                %a{:href => "#"} Edit
+              %li 
+                %a{:href => "#"} Distribute
         %tr.even.medium
-          %td node001
+          %td ring001
           %td 80%
           %td west
           %td 11000
           %td sdb1
           %td n/a
+          %td.actions 
+            %ul
+              %li 
+                %a{:href => "#"} Delete
+              %li 
+                %a{:href => "#"} Edit
+              %li 
+                %a{:href => "#"} Distribute
         %tr.odd.good
-          %td node001
+          %td ring001
           %td 80%
           %td west
           %td 11000
           %td sdb1
           %td n/a
+          %td.actions 
+            %ul
+              %li 
+                %a{:href => "#"} Delete
+              %li 
+                %a{:href => "#"} Edit
+              %li 
+                %a{:href => "#"} Distribute
         %tr.even.good
-          %td node001
+          %td ring001
           %td 80%
           %td west
           %td 11000
           %td sdb1
           %td n/a
+          %td.actions 
+            %ul
+              %li 
+                %a{:href => "#"} Delete
+              %li 
+                %a{:href => "#"} Edit
+              %li 
+                %a{:href => "#"} Distribute
         %tr.odd.good
-          %td node001
+          %td ring001
           %td 80%
           %td west
           %td 11000
           %td sdb1
           %td n/a
+          %td.actions 
+            %ul
+              %li 
+                %a{:href => "#"} Delete
+              %li 
+                %a{:href => "#"} Edit
+              %li 
+                %a{:href => "#"} Distribute
         %tr.even.good
-          %td node001
+          %td ring001
           %td 80%
           %td west
           %td 11000
           %td sdb1
           %td n/a
+          %td.actions 
+            %ul
+              %li 
+                %a{:href => "#"} Delete
+              %li 
+                %a{:href => "#"} Edit
+              %li 
+                %a{:href => "#"} Distribute
         %tr.odd.good
-          %td node001
+          %td ring001
           %td 80%
           %td west
           %td 11000
           %td sdb1
           %td n/a
+          %td.actions 
+            %ul
+              %li 
+                %a{:href => "#"} Delete
+              %li 
+                %a{:href => "#"} Edit
+              %li 
+                %a{:href => "#"} Distribute
         %tr.even.good
-          %td node001
+          %td ring001
           %td 80%
           %td west
           %td 11000
           %td sdb1
           %td n/a
+          %td.actions 
+            %ul
+              %li 
+                %a{:href => "#"} Delete
+              %li 
+                %a{:href => "#"} Edit
+              %li 
+                %a{:href => "#"} Distribute
         %tr.odd.good
-          %td node001
+          %td ring001
           %td 80%
           %td west
           %td 11000
           %td sdb1
           %td n/a
+          %td.actions 
+            %ul
+              %li 
+                %a{:href => "#"} Delete
+              %li 
+                %a{:href => "#"} Edit
+              %li 
+                %a{:href => "#"} Distribute
         %tr.even.good
-          %td node001
+          %td ring001
           %td 80%
           %td west
           %td 11000
           %td sdb1
           %td n/a
+          %td.actions 
+            %ul
+              %li 
+                %a{:href => "#"} Delete
+              %li 
+                %a{:href => "#"} Edit
+              %li 
+                %a{:href => "#"} Distribute
