@@ -4,18 +4,14 @@
       %fieldset
         %label{:for => "search_field"} Search
         %input#search_field{:name => "search", :type => "text", :value => ""}/
-  %h3 Manage Compute
-  %ul.sub_nav
-    %li
-      %a.active{:href => "/"} Dashboard
-    %li
-      %a{:href => "/manage_instances"} Manage Instances
-    %li
-      %a{:href => "/manage_volumes"} Manage Volumes
-    %li
-      %a{:href => "/manage_security"} Manage Security
-    %li
-      %a{:href => "/manage_vpn"} Manage VPN
+    %h3 Manage Object Store
+    %ul.sub_nav
+      %li
+        %a.active{:href => "/objectstore_dashboard"} Dashboard
+      %li
+        %a{:href => "/manage_accounts"} Manage Accounts
+      %li
+        %a{:href => "/manage_rings"} Manage Rings
 #main
   #page_header
     %h2

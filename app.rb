@@ -22,7 +22,7 @@ module SinatraApp
     end
 
     get '/manage_volumes' do
-      haml :manage_volumeswasw
+      haml :manage_volumes
     end
 
     get '/manage_security' do
