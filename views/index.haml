@@ -7,7 +7,7 @@
   %h3 Manage Compute
   %ul.sub_nav
     %li
-      %a.active{:href => "/"} Dashboard
+      %a{:href => "/"} Dashboard
     %li
       %a{:href => "/manage_instances"} Manage Instances
     %li
@@ -16,6 +16,15 @@
       %a{:href => "/manage_security"} Manage Security
     %li
       %a{:href => "/manage_vpn"} Manage VPN
+  %h3 Manage Compute
+  %ul.sub_nav
+    %li
+      %a{:href => "/objectstore_dashboard"} Dashboard
+    %li
+      %a{:href => "/manage_accounts"} Manage Accounts
+    %li
+      %a{:href => "/manage_rings"} Manage Rings
+
 #main
   #page_header
     %h2
@@ -45,6 +54,45 @@
           %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
           %span Launch Instance
   .main_content
+    %ul.status_box.good
+      %li.status.block
+        %span Status:
+        Awesome
+      %li.block
+        %p.overview 
+          100
+          %span Cores
+        %p.used
+          22
+          %span.label Used
+        %p.avail
+          78
+          %span.label Avail
+      %li.block
+        %p.overview
+          256
+          %span GB Ram
+        %p.used
+          200
+          %span.unit GB
+          %span.label Used
+        %p.avail
+          56
+          %span.unit GB
+          %span.label Avail
+      %li.block
+        %p.overview
+          100
+          %span TB Disk
+        %p.used
+          30
+          %span.unit TB
+          %span.label Used
+        %p.avail
+          56
+          %span.unit TB
+          %span.label Avail
+          
     .dash_block
       .table_title.narrow
         %h3 Health
