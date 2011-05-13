@@ -54,6 +54,84 @@
           %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
           %span Launch Instance
   .main_content
+    %ul.status_box.bad
+      %li.status.block
+        %span Status:
+        Ruh Roh!
+      %li.block
+        %p.overview 
+          100
+          %span Cores
+        %p.used
+          22
+          %span.label Used
+        %p.avail
+          78
+          %span.label Avail
+      %li.block
+        %p.overview
+          256
+          %span GB Ram
+        %p.used
+          200
+          %span.unit GB
+          %span.label Used
+        %p.avail
+          56
+          %span.unit GB
+          %span.label Avail
+      %li.block.last
+        %p.overview
+          100
+          %span TB Disk
+        %p.used
+          30
+          %span.unit TB
+          %span.label Used
+        %p.avail
+          56
+          %span.unit TB
+          %span.label Avail
+  
+    %ul.status_box.medium
+      %li.status.block
+        %span Status:
+        Warning
+      %li.block
+        %p.overview 
+          100
+          %span Cores
+        %p.used
+          22
+          %span.label Used
+        %p.avail
+          78
+          %span.label Avail
+      %li.block
+        %p.overview
+          256
+          %span GB Ram
+        %p.used
+          200
+          %span.unit GB
+          %span.label Used
+        %p.avail
+          56
+          %span.unit GB
+          %span.label Avail
+      %li.block.last
+        %p.overview
+          100
+          %span TB Disk
+        %p.used
+          30
+          %span.unit TB
+          %span.label Used
+        %p.avail
+          56
+          %span.unit TB
+          %span.label Avail
+  
     %ul.status_box.good
       %li.status.block
         %span Status:
@@ -80,7 +158,7 @@
           56
           %span.unit GB
           %span.label Avail
-      %li.block
+      %li.block.last
         %p.overview
           100
           %span TB Disk
@@ -88,7 +166,7 @@
           30
           %span.unit TB
           %span.label Used
-        %p.avail
+        %p.avail.last
           56
           %span.unit TB
           %span.label Avail
