@@ -1,13 +1,4 @@
 $(function(){
-
-  $('#block_grid').masonry({
-    itemSelector: '.dash_block',
-    columnWidth: 365
-    
-  })
-  $( ".table_title" ).disableSelection();
-  
-  
   $('input#table_search').quicksearch('table tbody.main tr');
   
   $("#more").hide()  
