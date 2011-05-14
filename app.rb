@@ -14,7 +14,7 @@ module SinatraApp
     # compute pages
     
     get '/compute_dashboard' do
-      haml :compute_dashbaord
+      haml :compute_dashboard
     end
 
     get '/manage_instances' do
