@@ -33,31 +33,11 @@
     %p.desc
       %span &mdash;
       This is the general view of your cloud.
-    %a.more_link{:href => "#"} More Info
-    #more
-      .block
-        %h3 Launch New Instance
-        %p Select an image from which you would like to launch a new server instance from.
-        %a.fancy_btn{:href => "#"}
-          %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
-          %span Launch Instance
-      .block
-        %h3 Manage Volumes
-        %p View and manage volumes which can be attached to instances as disk space.
-        %a.fancy_btn{:href => "#"}
-          %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
-          %span Launch Instance
-      .block.last
-        %h3 Manage Security
-        %p Lock down your OpenStack cloud in case of security breach or vulnerability.
-        %a.fancy_btn{:href => "#"}
-          %img{:alt => "Launch", :height => "17", :src => "images/button/launch.png", :width => "16"}/
-          %span Launch Instance
   .main_content
     %ul.status_box.good
       %li.status.block
         %span Status:
-        Ruh Roh!
+        Awesome
       %li.block
         %p.overview 
           100
@@ -92,109 +72,127 @@
           56
           %span.unit TB
           %span.label Avail
+    #block_grid
+      .dash_block
+        .table_title.narrow
+          %h3 Services
+        %table
+          %tr
+            %th Service Name
+            %th Status
+          %tr.odd.good
+            %td Nova API
+            %td Available
+          %tr.even.good
+            %td VNC Proxy
+            %td Available
+          %tr.odd.good
+            %td Scheduler
+            %td Available
+          %tr.even.good
+            %td RabbitMQ
+            %td Available
+          %tr.odd.good
+            %td MySQL
+            %td Available
+
+      .dash_block
+        .table_title.narrow
+          %h3 Recent Notifications
+        %table
+          %tr
+            %th{:colspan => 2} Summary
+          %tr.odd
+            %td host001 is low on RAM
+            %td.report
+              %a{:href => "#"} View Report
+          %tr.even
+            %td host001 is low on RAM
+            %td.report
+              %a{:href => "#"} View Report
+          %tr.odd
+            %td host001 is low on RAM
+            %td.report
+              %a{:href => "#"} View Report
+          %tr.even
+            %td host001 is low on RAM
+            %td.report
+              %a{:href => "#"} View Report
+            %tr.odd
+              %td host001 is low on RAM
+              %td.report
+                %a{:href => "#"} View Report
+            %tr.even
+              %td host001 is low on RAM
+              %td.report
+                %a{:href => "#"} View Report
+            %tr.odd
+              %td host001 is low on RAM
+              %td.report
+                %a{:href => "#"} View Report
+            %tr.even
+              %td host001 is low on RAM
+              %td.report
+                %a{:href => "#"} View Report
+
+      .dash_block
+        .table_title.narrow
+          %h3 Services
+        %table
+          %tr
+            %th Service Name
+            %th Status
+          %tr.odd.good
+            %td Nova API
+            %td Available
+          %tr.even.good
+            %td VNC Proxy
+            %td Available
+          %tr.odd.good
+            %td Scheduler
+            %td Available
+          %tr.even.good
+            %td RabbitMQ
+            %td Available
+          %tr.odd.good
+            %td MySQL
+            %td Available
           
-    .dash_block
-      .table_title.narrow
-        %h3 Health
-        .search
-          %form{:action => "", :method => "post"}
-            %fieldset
-              %label{:for => "table_search"} Search
-              %input#table_search{:name => "search", :type => "text", :value => ""}/
-      %table#health_table
-        %tr
-          %th Hostname
-          %th{:colspan => "3"} Health
-        %tr.odd.good
-          %td host0001
-          %td{:colspan => "3"}
-            good
-            %a.more_link{:href => "#"} More Info
-        %tr.more
-          %th Load
-          %th RAM
-          %th Disk
-          %th VMs
-        %tr.more
-          %td 0.16, 0.23, 0.31
-          %td 7.3gb of 12gb
-          %td 752gb of 1200gb
-          %td 17
-        %tr.even.good
-          %td host0002
-          %td{:colspan => "3"}
-            good
-            %a.more_link{:href => "#"} More Info
-        %tr.more
-          %th Load
-          %th RAM
-          %th Disk
-          %th VMs
-        %tr.more
-          %td 0.16, 0.23, 0.31
-          %td 7.3gb of 12gb
-          %td 752gb of 1200gb
-          %td 17
-        %tr.odd.bad
-          %td host0003
-          %td{:colspan => "3"}
-            bad
-            %a.more_link{:href => "#"} More Info
-        %tr.more
-          %th Load
-          %th RAM
-          %th Disk
-          %th VMs
-        %tr.more
-          %td 0.16, 0.23, 0.31
-          %td 7.3gb of 12gb
-          %td 752gb of 1200gb
-          %td 17
-        %tr.even.good
-          %td host0004
-          %td{:colspan => "3"}
-            good
-            %a.more_link{:href => "#"} More Info
-        %tr.more
-          %th Load
-          %th RAM
-          %th Disk
-          %th VMs
-        %tr.more
-          %td 0.16, 0.23, 0.31
-          %td 7.3gb of 12gb
-          %td 752gb of 1200gb
-          %td 17
-        %tr.odd.medium
-          %td host0005
-          %td{:colspan => "3"}
-            medium
-            %a.more_link{:href => "#"} More Info
-        %tr.more
-          %th Load
-          %th RAM
-          %th Disk
-          %th VMs
-        %tr.more
-          %td 0.16, 0.23, 0.31
-          %td 7.3gb of 12gb
-          %td 752gb of 1200gb
-          %td 17
-        %tr.even.bad
-          %td host0006
-          %td{:colspan => "3"}
-            bad
-            %a.more_link{:href => "#"} More Info
-        %tr.more
-          %th Load
-          %th RAM
-          %th Disk
-          %th VMs
-        %tr.more
-          %td 0.16, 0.23, 0.31
-          %td 7.3gb of 12gb
-          %td 752gb of 1200gb
-          %td 17
-    .dash_block
-      .table_title.narrow
-        %h3 Resources
+      .dash_block
+        .table_title.narrow
+          %h3 Recent Notifications
+        %table
+          %tr
+            %th{:colspan => 2} Summary
+          %tr.odd
+            %td host001 is low on RAM
+            %td.report
+              %a{:href => "#"} View Report
+          %tr.even
+            %td host001 is low on RAM
+            %td.report
+              %a{:href => "#"} View Report
+          %tr.odd
+            %td host001 is low on RAM
+            %td.report
+              %a{:href => "#"} View Report
+          %tr.even
+            %td host001 is low on RAM
+            %td.report
+              %a{:href => "#"} View Report
+            %tr.odd
+              %td host001 is low on RAM
+              %td.report
+                %a{:href => "#"} View Report
+            %tr.even
+              %td host001 is low on RAM
+              %td.report
+                %a{:href => "#"} View Report
+            %tr.odd
+              %td host001 is low on RAM
+              %td.report
+                %a{:href => "#"} View Report
+            %tr.even
+              %td host001 is low on RAM
+              %td.report
+                %a{:href => "#"} View Report

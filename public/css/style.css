@@ -476,7 +476,7 @@ table.wide {
 	margin-right: 0;
 	float: left;
 	height: 44px;
-	border: 1px solid #ebebeb;
+	border: 1px solid #e1e1e1;
 }
 
 table#instances  {
@@ -577,11 +577,15 @@ p#copy {
 }
 
 
-
+#block_grid {
+	float: left;
+	width: 700px;
+}
 .dash_block {
 	width: 340px;
 	float: left;
 	margin-right: 23px;
+	margin-bottom: 25px;
 }
 
 .dash_block table {
@@ -881,6 +885,13 @@ ol li.first a {
   display:none;
 }
 
+
+.report {
+	font-size: 12px;
+}
+
+
+/* Status Bar */
 .status_box.good { 
 	background-color: #e9ffe8;
 	border-color: #9edd9b;
@@ -888,7 +899,7 @@ ol li.first a {
 }
 .status_box.medium { 
 	background-color: #ffffe8;
-	border-color: #fff1bd;
+	border-color: #ffe37b;
 	color: #eada83;
 }
 
@@ -965,6 +976,11 @@ li.block {
 .good .block {
 	border-color: #c3eec1;
 }
+
+.medium .block {
+	border-color: #fbf665;
+}
+
 
 .bad .block {
 	border-color: #faa;
