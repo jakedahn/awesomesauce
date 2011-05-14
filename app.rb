@@ -13,7 +13,7 @@ module SinatraApp
 
     # compute pages
     
-    get '/compuate_dashboard' do
+    get '/compute_dashboard' do
       haml :compute_dashbaord
     end
 
