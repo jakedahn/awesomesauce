@@ -893,7 +893,7 @@ function init(){
     //parent box title heights
     titleHeight: 15,
     //enable animations
-    animate: animate,
+    animate: false,
     //box offsets
     offset: 1,
     //Attach left and right click events
@@ -951,6 +951,7 @@ function init(){
     })
     tm.loadJSON(json);
     tm.refresh();
+    console.log("foo");
   }, 3000)
   //end
   //add events to radio buttons
