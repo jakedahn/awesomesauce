@@ -11,6 +11,10 @@ module SinatraApp
       haml :index
     end
 
+    get '/treemap' do 
+      erb :treemap
+    end
+
     # compute pages
     
     get '/compute_dashboard' do
