@@ -952,7 +952,7 @@ function init(){
     tm.loadJSON(json);
     tm.refresh();
     console.log("foo");
-  }, 3000)
+  }, 1500)
   //end
   //add events to radio buttons
   var sq = $jit.id('r-sq'),
