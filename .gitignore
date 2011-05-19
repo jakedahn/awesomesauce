@@ -1,0 +1,3 @@
+*.pyc
+.dashboard-venv
+*.sw*
