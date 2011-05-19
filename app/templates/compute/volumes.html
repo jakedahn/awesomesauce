@@ -1,0 +1,249 @@
+{% extends 'compute/base.html' %}
+
+{% block main_content %}
+
+  <div id='page_header'> 
+    <h2><span>Compute:</span> Volumes</h2> 
+    <p class='desc'><span>&mdash;</span> Volumes are block storage which can be mounted on an instance.</p> 
+        <a class='more_link' href='#'>More Info</a> 
+        <div id='more'> 
+          <div class='block'> 
+            <h3>Add New Volume</h3> 
+            <p>Create a new volume by adding your desired size, and location foo bar baz.</p> 
+            <a class='fancy_btn' href='#'> 
+              <img alt='Launch' height='17' src='images/button/launch.png' width='16' /> 
+              <span>Add New Volume</span> 
+            </a> 
+          </div> 
+          <div class='block'> 
+            <h3>Format Volume</h3> 
+            <p>You can format a volume to ext2, ext3, ext4, or other popular filesystems.</p> 
+            <a class='fancy_btn' href='#'> 
+              <img alt='Launch' height='17' src='images/button/launch.png' width='16' /> 
+              <span>Format Volume</span> 
+            </a> 
+          </div> 
+          <div class='block last'> 
+            <h3>Volume Snapshots</h3> 
+            <p>You can schedule periodic snapshots for a volume, or run a one-time snapshot.</p> 
+            <a class='fancy_btn' href='#'> 
+              <img alt='Launch' height='17' src='images/button/launch.png' width='16' /> 
+              <span>Take Snapshot</span> 
+            </a> 
+          </div> 
+        </div> 
+      </div> 
+      <div class='main_content'> 
+        <div class='table_title wide'> 
+          <h3>Volumes</h3> 
+          <div class='search'> 
+            <form action='' method='post'> 
+              <fieldset> 
+                <label for='table_search'>Search</label> 
+                <input id='table_search' name='search' type='text' value='' /> 
+              </fieldset> 
+            </form> 
+          </div> 
+        </div> 
+        <table id='instances'> 
+          <tr id='headings'> 
+            <th>ID</th> 
+            <th>Host</th> 
+            <th>User</th> 
+            <th>Size</th> 
+            <th>Status</th> 
+            <th>Device</th> 
+            <th>Actions</th> 
+          </tr> 
+          <tbody class='main'> 
+            <tr class='odd'> 
+              <td>vol-0cea</td> 
+              <td>host001</td> 
+              <td>jakedahn</td> 
+              <td>5GB</td> 
+              <td>available</td> 
+              <td>none</td> 
+              <td class='actions'> 
+                <ul> 
+                  <li> 
+                    <a href='#'>Detach</a> 
+                  </li> 
+                  <li> 
+                    <a href='#'>Destroy</a> 
+                  </li> 
+                </ul> 
+              </td> 
+            </tr> 
+            <tr class='even'> 
+              <td>vol-0ceb</td> 
+              <td>host001</td> 
+              <td>jakedahn</td> 
+              <td>5GB</td> 
+              <td>available</td> 
+              <td>none</td> 
+              <td class='actions'> 
+                <ul> 
+                  <li> 
+                    <a href='#'>Detach</a> 
+                  </li> 
+                  <li> 
+                    <a href='#'>Destroy</a> 
+                  </li> 
+                </ul> 
+              </td> 
+            </tr> 
+            <tr class='odd'> 
+              <td>vol-0cec</td> 
+              <td>host001</td> 
+              <td>jakedahn</td> 
+              <td>5GB</td> 
+              <td>available</td> 
+              <td>none</td> 
+              <td class='actions'> 
+                <ul> 
+                  <li> 
+                    <a href='#'>Detach</a> 
+                  </li> 
+                  <li> 
+                    <a href='#'>Destroy</a> 
+                  </li> 
+                </ul> 
+              </td> 
+            </tr> 
+            <tr class='even'> 
+              <td>vol-0ced</td> 
+              <td>host001</td> 
+              <td>jakedahn</td> 
+              <td>5GB</td> 
+              <td>available</td> 
+              <td>none</td> 
+              <td class='actions'> 
+                <ul> 
+                  <li> 
+                    <a href='#'>Detach</a> 
+                  </li> 
+                  <li> 
+                    <a href='#'>Destroy</a> 
+                  </li> 
+                </ul> 
+              </td> 
+            </tr> 
+            <tr class='odd'> 
+              <td>vol-0cee</td> 
+              <td>host001</td> 
+              <td>jakedahn</td> 
+              <td>5GB</td> 
+              <td>available</td> 
+              <td>none</td> 
+              <td class='actions'> 
+                <ul> 
+                  <li> 
+                    <a href='#'>Detach</a> 
+                  </li> 
+                  <li> 
+                    <a href='#'>Destroy</a> 
+                  </li> 
+                </ul> 
+              </td> 
+            </tr> 
+            <tr class='even'> 
+              <td>vol-0cef</td> 
+              <td>host001</td> 
+              <td>jakedahn</td> 
+              <td>5GB</td> 
+              <td>available</td> 
+              <td>none</td> 
+              <td class='actions'> 
+                <ul> 
+                  <li> 
+                    <a href='#'>Detach</a> 
+                  </li> 
+                  <li> 
+                    <a href='#'>Destroy</a> 
+                  </li> 
+                </ul> 
+              </td> 
+            </tr> 
+            <tr class='odd'> 
+              <td>vol-0ceg</td> 
+              <td>host001</td> 
+              <td>jakedahn</td> 
+              <td>5GB</td> 
+              <td>available</td> 
+              <td>none</td> 
+              <td class='actions'> 
+                <ul> 
+                  <li> 
+                    <a href='#'>Detach</a> 
+                  </li> 
+                  <li> 
+                    <a href='#'>Destroy</a> 
+                  </li> 
+                </ul> 
+              </td> 
+            </tr> 
+            <tr class='even'> 
+              <td>vol-0ceh</td> 
+              <td>host001</td> 
+              <td>jakedahn</td> 
+              <td>15GB</td> 
+              <td>available</td> 
+              <td>none</td> 
+              <td class='actions'> 
+                <ul> 
+                  <li> 
+                    <a href='#'>Detach</a> 
+                  </li> 
+                  <li> 
+                    <a href='#'>Destroy</a> 
+                  </li> 
+                </ul> 
+              </td> 
+            </tr> 
+            <tr class='odd'> 
+              <td>vol-0cei</td> 
+              <td>host001</td> 
+              <td>jakedahn</td> 
+              <td>10GB</td> 
+              <td> 
+                Attached to Instance:
+                <a href='#'>i-000b283</a> 
+              </td> 
+              <td>/dev/vdb</td> 
+              <td class='actions'> 
+                <ul> 
+                  <li> 
+                    <a href='#'>Detach</a> 
+                  </li> 
+                  <li> 
+                    <a href='#'>Destroy</a> 
+                  </li> 
+                </ul> 
+              </td> 
+            </tr> 
+            <tr class='even'> 
+              <td>vol-0cej</td> 
+              <td>host001</td> 
+              <td>jakedahn</td> 
+              <td>10GB</td> 
+              <td> 
+                Attached to Instance:
+                <a href='#'>i-000b283</a> 
+              </td> 
+              <td>/dev/vdc</td> 
+              <td class='actions'> 
+                <ul> 
+                  <li> 
+                    <a href='#'>Detach</a> 
+                  </li> 
+                  <li> 
+                    <a href='#'>Destroy</a> 
+                  </li> 
+                </ul> 
+              </td> 
+            </tr> 
+          </tbody> 
+        </table> 
+      </div> 
+    </div> 
+{% endblock main_content %}

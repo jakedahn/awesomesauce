@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block sidebar %}
+<div id='sidebar'> 
+  <div class='search'> 
+    <form accept-charset='utf-8' action='search' method='post'> 
+      <fieldset> 
+        <label for='search_field'>Search</label> 
+        <input id='search_field' name='search' type='text' value='' /> 
+      </fieldset> 
+    </form> 
+  </div> 
+  <h3>Manage Compute</h3> 
+  <ul class='sub_nav'> 
+    <li><a href='/'>Dashboard</a></li>
+    <li><a href='/manage_instances'>Manage Instances</a></li>
+    <li><a href='/manage_volumes'>Manage Volumes</a></li>
+    <li><a href='/manage_security'>Manage Security</a></li>
+    <li><a href='/manage_vpn'>Manage VPN</a></li>
+  </ul> 
+  <h3>Manage Object Store</h3> 
+  <ul class='sub_nav'> 
+    <li><a href='/objectstore_dashboard'>Dashboard</a></li>
+    <li><a href='/manage_accounts'>Manage Accounts</a></li>
+    <li><a href='/manage_rings'>Manage Rings</a></li>
+  </ul> 
+</div> 
+{% endblock sidebar %}

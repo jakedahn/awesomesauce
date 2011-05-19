@@ -1,0 +1,60 @@
+{% extends 'compute/base.html' %}
+
+{% block main_content %}
+
+  <div id='page_header'> 
+    <h2><span>Compute:</span> Security</h2> 
+    <p class='desc'><span>&mdash;</span> You can manage emergency security situations on this page.</p> 
+  </div> 
+  <div class='main_content'> 
+    <div id='security'> 
+      <div class='scenario narrow'> 
+        <div class='table_title narrow'> 
+          <h3>Disable Project/User</h3> 
+        </div> 
+        <form accept-charset='utf-8' action='#' id='disable_project_credentials' method='post'> 
+          <fieldset> 
+            <label for='id_project_name'>Project name</label> 
+            <input id='id_project_name' name='project_name' type='text' /> 
+            <input type='submit' value='Turn off user/project' /> 
+          </fieldset> 
+        </form> 
+      </div> 
+      <div class='scenario narrow'> 
+        <div class='table_title narrow'> 
+          <h3>Block IP Range</h3> 
+        </div> 
+        <form accept-charset='utf-8' action='#' id='disable_ip_range' method='post'> 
+          <fieldset> 
+            <input type='text' /> 
+            <span class='dash'> 
+              &mdash;
+            </span> 
+            <input type='text' /> 
+            <input type='submit' value='Block IP Range' /> 
+          </fieldset> 
+        </form> 
+      </div> 
+    </div> 
+    <div class='scenario narrow'> 
+      <div class='table_title narrow'> 
+        <h3>Turn off all Public IPs</h3> 
+      </div> 
+      <form accept-charset='utf-8' action='#' method='post'> 
+        <fieldset> 
+          <input name='turn_off_ips' type='submit' value='Turn off Public IPs' /> 
+        </fieldset> 
+      </form> 
+    </div> 
+    <div class='scenario narrow'> 
+      <div class='table_title narrow'> 
+        <h3>Disable VPN</h3> 
+      </div> 
+      <form accept-charset='utf-8' action='#' method='post'> 
+        <fieldset> 
+          <input name='block_vpn' type='submit' value='Turn off VPNs' /> 
+        </fieldset> 
+      </form> 
+    </div> 
+  </div> 
+{% endblock main_content %}

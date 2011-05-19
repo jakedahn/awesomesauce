@@ -1,0 +1,131 @@
+{% extends 'compute/base.html' %}
+
+{% block main_content %}
+
+  <div id='page_header'> 
+    <h2><span>Compute:</span> VPN</h2> 
+    <p class='desc'><span>&mdash;</span> Monitor, send credentials, restart, or terminate VPN for instances.</p> 
+  </div>
+  <div class='main_content'> 
+    <div class='table_title wide'> 
+      <h3>Instances</h3> 
+      <div class='search'> 
+        <form action='' method='post'> 
+          <fieldset> 
+            <label for='table_search'>Search</label> 
+            <input id='table_search' name='search' type='text' value='' /> 
+          </fieldset> 
+        </form> 
+      </div> 
+    </div> 
+    <table id='instances'> 
+      <tr id='headings'> 
+        <th>Project</th> 
+        <th>Instance</th> 
+        <th>Created</th> 
+        <th>IP</th> 
+        <th>Public IP</th> 
+        <th>State</th> 
+        <th>Actions</th> 
+      </tr> 
+      <tbody class='main'> 
+        <tr class='odd running'> 
+          <td>jaketest</td> 
+          <td>i-0284hf3</td> 
+          <td>2011-04-07T17:58:01Z</td> 
+          <td>10.1.30.2</td> 
+          <td>None</td> 
+          <td>Running</td> 
+          <td class='actions'> 
+            <ul> 
+              <li> 
+                <a href='#'>Terminate</a> 
+              </li> 
+              <li> 
+                <a href='#'>Restart</a> 
+              </li> 
+              <li> 
+                <a href='#'>Log</a> 
+              </li> 
+              <li> 
+                <a href='#'>Send Credentials</a> 
+              </li> 
+            </ul> 
+          </td> 
+        </tr> 
+        <tr class='even running'> 
+          <td>jaketest</td> 
+          <td>i-3oubrf</td> 
+          <td>2011-05-11T17:58:01Z</td> 
+          <td>10.1.30.5</td> 
+          <td>None</td> 
+          <td>Running</td> 
+          <td class='actions'> 
+            <ul> 
+              <li> 
+                <a href='#'>Terminate</a> 
+              </li> 
+              <li> 
+                <a href='#'>Restart</a> 
+              </li> 
+              <li> 
+                <a href='#'>Log</a> 
+              </li> 
+              <li> 
+                <a href='#'>Send Credentials</a> 
+              </li> 
+            </ul> 
+          </td> 
+        </tr> 
+      </tbody> 
+      <tr class='odd running'> 
+        <td>jaketest</td> 
+        <td>i-0284hf3</td> 
+        <td>2011-04-07T17:58:01Z</td> 
+        <td>10.1.30.2</td> 
+        <td>None</td> 
+        <td>Running</td> 
+        <td class='actions'> 
+          <ul> 
+            <li> 
+              <a href='#'>Terminate</a> 
+            </li> 
+            <li> 
+              <a href='#'>Restart</a> 
+            </li> 
+            <li> 
+              <a href='#'>Log</a> 
+            </li> 
+            <li> 
+              <a href='#'>Send Credentials</a> 
+            </li> 
+          </ul> 
+        </td> 
+      </tr> 
+      <tr class='even running'> 
+        <td>jaketest</td> 
+        <td>i-3oubrf</td> 
+        <td>2011-05-11T17:58:01Z</td> 
+        <td>10.1.30.5</td> 
+        <td>None</td> 
+        <td>Running</td> 
+        <td class='actions'> 
+          <ul> 
+            <li> 
+              <a href='#'>Terminate</a> 
+            </li> 
+            <li> 
+              <a href='#'>Restart</a> 
+            </li> 
+            <li> 
+              <a href='#'>Log</a> 
+            </li> 
+            <li> 
+              <a href='#'>Send Credentials</a> 
+            </li> 
+          </ul> 
+        </td> 
+      </tr> 
+    </table> 
+  </div> 
+{% endblock main_content %}

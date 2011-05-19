@@ -1,0 +1,295 @@
+{% extends 'compute/base.html' %}
+
+{% block main_content %}
+
+  <div id='page_header'> 
+    <h2><span>Compute:</span> Instances</h2> 
+    <p class='desc'><span>&mdash;</span> Instances are virtual servers launched from images.</p> 
+      <a class='more_link' href='#'>More Info</a> 
+      <div id='more'> 
+        <div class='block'> 
+          <h3>Launch New Instance</h3> 
+          <p>Select an image from which you would like to launch a new server instance from.</p> 
+          <a class='fancy_btn' href='#'> 
+            <img alt='Launch' height='17' src='images/button/launch.png' width='16' /> 
+            <span>Launch Instance</span> 
+          </a> 
+        </div> 
+        <div class='block'> 
+          <h3>Manage Volumes</h3> 
+          <p>View and manage volumes which can be attached to instances as disk space.</p> 
+          <a class='fancy_btn' href='#'> 
+            <img alt='Launch' height='17' src='images/button/launch.png' width='16' /> 
+            <span>Launch Instance</span> 
+          </a> 
+        </div> 
+        <div class='block last'> 
+          <h3>Manage Security</h3> 
+          <p>Lock down your OpenStack cloud in case of security breach or vulnerability.</p> 
+          <a class='fancy_btn' href='#'> 
+            <img alt='Launch' height='17' src='images/button/launch.png' width='16' /> 
+            <span>Launch Instance</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div> 
+    <div class='main_content'> 
+      <div class='table_title wide'> 
+        <h3>Instances</h3> 
+        <div class='search'> 
+          <form action='' method='post'> 
+            <fieldset> 
+              <label for='table_search'>Search</label> 
+              <input id='table_search' name='search' type='text' value='' /> 
+            </fieldset> 
+          </form> 
+        </div> 
+      </div> 
+      <table id='instances'> 
+        <tr id='headings'> 
+          <th>ID</th> 
+          <th>User</th> 
+          <th>Host</th> 
+          <th>Image</th> 
+          <th>IP</th> 
+          <th>Public IP</th> 
+          <th>Volumes</th> 
+          <th>State</th> 
+          <th>Actions</th> 
+        </tr> 
+        <tbody class='main'> 
+          <tr class='odd'> 
+            <td>i-0000bf67</td> 
+            <td>jakedahn</td> 
+            <td>host01</td> 
+            <td>Narwhal</td> 
+            <td>10.1.1.4</td> 
+            <td>none</td> 
+            <td>vol-1234</td> 
+            <td>running</td> 
+            <td class='actions'> 
+              <ul> 
+                <li> 
+                  <a href='#'>Terminate</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Restart</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Log</a> 
+                </li> 
+              </ul> 
+            </td> 
+          </tr> 
+          <tr class='even'> 
+            <td>i-0000bf67</td> 
+            <td>jakedahn</td> 
+            <td>host01</td> 
+            <td>Narwhal</td> 
+            <td>10.1.1.2</td> 
+            <td>none</td> 
+            <td>vol-1234</td> 
+            <td>running</td> 
+            <td class='actions'> 
+              <ul> 
+                <li> 
+                  <a href='#'>Terminate</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Restart</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Log</a> 
+                </li> 
+              </ul> 
+            </td> 
+          </tr> 
+          <tr class='odd'> 
+            <td>i-0000bf67</td> 
+            <td>jakedahn</td> 
+            <td>host01</td> 
+            <td>Narwhal</td> 
+            <td>10.1.1.2</td> 
+            <td>none</td> 
+            <td>vol-1234</td> 
+            <td>running</td> 
+            <td class='actions'> 
+              <ul> 
+                <li> 
+                  <a href='#'>Terminate</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Restart</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Log</a> 
+                </li> 
+              </ul> 
+            </td> 
+          </tr> 
+          <tr class='even'> 
+            <td>i-0000bf67</td> 
+            <td>jakedahn</td> 
+            <td>host01</td> 
+            <td>Narwhal</td> 
+            <td>10.1.1.2</td> 
+            <td>none</td> 
+            <td>vol-1234</td> 
+            <td>running</td> 
+            <td class='actions'> 
+              <ul> 
+                <li> 
+                  <a href='#'>Terminate</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Restart</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Log</a> 
+                </li> 
+              </ul> 
+            </td> 
+          </tr> 
+          <tr class='odd'> 
+            <td>i-0000bf67</td> 
+            <td>jakedahn</td> 
+            <td>host01</td> 
+            <td>Narwhal</td> 
+            <td>10.1.1.2</td> 
+            <td>none</td> 
+            <td>vol-1234</td> 
+            <td>running</td> 
+            <td class='actions'> 
+              <ul> 
+                <li> 
+                  <a href='#'>Terminate</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Restart</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Log</a> 
+                </li> 
+              </ul> 
+            </td> 
+          </tr> 
+          <tr class='even'> 
+            <td>i-0000bf67</td> 
+            <td>jakedahn</td> 
+            <td>host01</td> 
+            <td>Narwhal</td> 
+            <td>10.1.1.2</td> 
+            <td>none</td> 
+            <td>vol-1234</td> 
+            <td>running</td> 
+            <td class='actions'> 
+              <ul> 
+                <li> 
+                  <a href='#'>Terminate</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Restart</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Log</a> 
+                </li> 
+              </ul> 
+            </td> 
+          </tr> 
+          <tr class='odd'> 
+            <td>i-0000bf67</td> 
+            <td>jakedahn</td> 
+            <td>host01</td> 
+            <td>Narwhal</td> 
+            <td>10.1.1.2</td> 
+            <td>none</td> 
+            <td>vol-1234</td> 
+            <td>running</td> 
+            <td class='actions'> 
+              <ul> 
+                <li> 
+                  <a href='#'>Terminate</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Restart</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Log</a> 
+                </li> 
+              </ul> 
+            </td> 
+          </tr> 
+          <tr class='even'> 
+            <td>i-0000bf67</td> 
+            <td>jakedahn</td> 
+            <td>host01</td> 
+            <td>Narwhal</td> 
+            <td>10.1.1.2</td> 
+            <td>none</td> 
+            <td>vol-1234</td> 
+            <td>running</td> 
+            <td class='actions'> 
+              <ul> 
+                <li> 
+                  <a href='#'>Terminate</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Restart</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Log</a> 
+                </li> 
+              </ul> 
+            </td> 
+          </tr> 
+          <tr class='odd'> 
+            <td>i-0000bf67</td> 
+            <td>jakedahn</td> 
+            <td>host01</td> 
+            <td>Narwhal</td> 
+            <td>10.1.1.2</td> 
+            <td>none</td> 
+            <td>vol-1234</td> 
+            <td>running</td> 
+            <td class='actions'> 
+              <ul> 
+                <li> 
+                  <a href='#'>Terminate</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Restart</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Log</a> 
+                </li> 
+              </ul> 
+            </td> 
+          </tr> 
+          <tr class='even'> 
+            <td>i-0000bf67</td> 
+            <td>jakedahn</td> 
+            <td>host01</td> 
+            <td>Narwhal</td> 
+            <td>10.1.1.2</td> 
+            <td>none</td> 
+            <td>vol-1234</td> 
+            <td>running</td> 
+            <td class='actions'> 
+              <ul> 
+                <li> 
+                  <a href='#'>Terminate</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Restart</a> 
+                </li> 
+                <li> 
+                  <a href='#'>Log</a> 
+                </li> 
+              </ul> 
+            </td> 
+          </tr> 
+        </tbody> 
+      </table> 
+    </div> 
+  </div> 
+{% endblock main_content %}

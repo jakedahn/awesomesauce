@@ -1,0 +1,248 @@
+{% extends "dashboard/base.html" %}
+
+{% block main_content %}
+  <div id='page_header'> 
+    <h2> 
+      <span>Dashboard:</span> 
+      Cloud Overview
+    </h2> 
+    <p class='desc'> 
+      <span>&mdash;</span> 
+      This is the general view of your cloud.
+    </p> 
+  </div> 
+  <div class='main_content'> 
+    <ul class='status_box good'> 
+      <li class='status block'> 
+        <span>Status:</span> 
+        Awesome
+      </li> 
+      <li class='block'> 
+        <p class='overview'> 
+          100
+          <span>Cores</span> 
+        </p> 
+        <p class='used'> 
+          22
+          <span class='label'>Used</span> 
+        </p> 
+        <p class='avail'> 
+          78
+          <span class='label'>Avail</span> 
+        </p> 
+      </li> 
+      <li class='block'> 
+        <p class='overview'> 
+          256
+          <span>GB Ram</span> 
+        </p> 
+        <p class='used'> 
+          200
+          <span class='unit'>GB</span> 
+          <span class='label'>Used</span> 
+        </p> 
+        <p class='avail'> 
+          56
+          <span class='unit'>GB</span> 
+          <span class='label'>Avail</span> 
+        </p> 
+      </li> 
+      <li class='block last'> 
+        <p class='overview'> 
+          100
+          <span>TB Disk</span> 
+        </p> 
+        <p class='used'> 
+          30
+          <span class='unit'>TB</span> 
+          <span class='label'>Used</span> 
+        </p> 
+        <p class='avail'> 
+          56
+          <span class='unit'>TB</span> 
+          <span class='label'>Avail</span> 
+        </p> 
+      </li> 
+    </ul> 
+    <div id='block_grid'> 
+      <div class='dash_block'> 
+        <div class='table_title narrow'> 
+          <h3>Services</h3> 
+        </div> 
+        <table> 
+          <tr> 
+            <th>Service Name</th> 
+            <th>Status</th> 
+          </tr> 
+          <tr class='odd good'> 
+            <td>Nova API</td> 
+            <td>Available</td> 
+          </tr> 
+          <tr class='even good'> 
+            <td>VNC Proxy</td> 
+            <td>Available</td> 
+          </tr> 
+          <tr class='odd good'> 
+            <td>Scheduler</td> 
+            <td>Available</td> 
+          </tr> 
+          <tr class='even good'> 
+            <td>RabbitMQ</td> 
+            <td>Available</td> 
+          </tr> 
+          <tr class='odd good'> 
+            <td>MySQL</td> 
+            <td>Available</td> 
+          </tr> 
+        </table> 
+      </div> 
+      <div class='dash_block'> 
+        <div class='table_title narrow'> 
+          <h3>Recent Notifications</h3> 
+        </div> 
+        <table> 
+          <tr> 
+            <th colspan='2'>Summary</th> 
+          </tr> 
+          <tr class='odd'> 
+            <td>host001 is low on RAM</td> 
+            <td class='report'> 
+              <a href='#'>View Report</a> 
+            </td> 
+          </tr> 
+          <tr class='even'> 
+            <td>host001 is low on RAM</td> 
+            <td class='report'> 
+              <a href='#'>View Report</a> 
+            </td> 
+          </tr> 
+          <tr class='odd'> 
+            <td>host001 is low on RAM</td> 
+            <td class='report'> 
+              <a href='#'>View Report</a> 
+            </td> 
+          </tr> 
+          <tr class='even'> 
+            <td>host001 is low on RAM</td> 
+            <td class='report'> 
+              <a href='#'>View Report</a> 
+            </td> 
+            <tr class='odd'> 
+              <td>host001 is low on RAM</td> 
+              <td class='report'> 
+                <a href='#'>View Report</a> 
+              </td> 
+            </tr> 
+            <tr class='even'> 
+              <td>host001 is low on RAM</td> 
+              <td class='report'> 
+                <a href='#'>View Report</a> 
+              </td> 
+            </tr> 
+            <tr class='odd'> 
+              <td>host001 is low on RAM</td> 
+              <td class='report'> 
+                <a href='#'>View Report</a> 
+              </td> 
+            </tr> 
+            <tr class='even'> 
+              <td>host001 is low on RAM</td> 
+              <td class='report'> 
+                <a href='#'>View Report</a> 
+              </td> 
+            </tr> 
+          </tr> 
+        </table> 
+      </div> 
+      <div class='dash_block'> 
+        <div class='table_title narrow'> 
+          <h3>Services</h3> 
+        </div> 
+        <table> 
+          <tr> 
+            <th>Service Name</th> 
+            <th>Status</th> 
+          </tr> 
+          <tr class='odd good'> 
+            <td>Nova API</td> 
+            <td>Available</td> 
+          </tr> 
+          <tr class='even good'> 
+            <td>VNC Proxy</td> 
+            <td>Available</td> 
+          </tr> 
+          <tr class='odd good'> 
+            <td>Scheduler</td> 
+            <td>Available</td> 
+          </tr> 
+          <tr class='even good'> 
+            <td>RabbitMQ</td> 
+            <td>Available</td> 
+          </tr> 
+          <tr class='odd good'> 
+            <td>MySQL</td> 
+            <td>Available</td> 
+          </tr> 
+        </table> 
+      </div> 
+      <div class='dash_block'> 
+        <div class='table_title narrow'> 
+          <h3>Recent Notifications</h3> 
+        </div> 
+        <table> 
+          <tr> 
+            <th colspan='2'>Summary</th> 
+          </tr> 
+          <tr class='odd'> 
+            <td>host001 is low on RAM</td> 
+            <td class='report'> 
+              <a href='#'>View Report</a> 
+            </td> 
+          </tr> 
+          <tr class='even'> 
+            <td>host001 is low on RAM</td> 
+            <td class='report'> 
+              <a href='#'>View Report</a> 
+            </td> 
+          </tr> 
+          <tr class='odd'> 
+            <td>host001 is low on RAM</td> 
+            <td class='report'> 
+              <a href='#'>View Report</a> 
+            </td> 
+          </tr> 
+          <tr class='even'> 
+            <td>host001 is low on RAM</td> 
+            <td class='report'> 
+              <a href='#'>View Report</a> 
+            </td> 
+            <tr class='odd'> 
+              <td>host001 is low on RAM</td> 
+              <td class='report'> 
+                <a href='#'>View Report</a> 
+              </td> 
+            </tr> 
+            <tr class='even'> 
+              <td>host001 is low on RAM</td> 
+              <td class='report'> 
+                <a href='#'>View Report</a> 
+              </td> 
+            </tr> 
+            <tr class='odd'> 
+              <td>host001 is low on RAM</td> 
+              <td class='report'> 
+                <a href='#'>View Report</a> 
+              </td> 
+            </tr> 
+            <tr class='even'> 
+              <td>host001 is low on RAM</td> 
+              <td class='report'> 
+                <a href='#'>View Report</a> 
+              </td> 
+            </tr> 
+          </tr> 
+        </table> 
+      </div> 
+    </div> 
+  </div> 
+{% endblock main_content %}

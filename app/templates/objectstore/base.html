@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block sidebar %}
+<div id='sidebar'> 
+  <div class='search'> 
+    <form accept-charset='utf-8' action='search' method='post'> 
+      <fieldset> 
+        <label for='search_field'>Search</label> 
+        <input id='search_field' name='search' type='text' value='' /> 
+      </fieldset> 
+    </form> 
+  </div> 
+  <h3>Manage Object Store</h3> 
+  <ul class='sub_nav'> 
+    <li><a href='/dashboard/objectstore/'>Dashboard</a></li>
+    <li><a href='/dashboard/objectstore/accounts/'>Manage Accounts</a></li>
+    <li><a href='/dashboard/objectstore/rings/'>Manage Rings</a></li>
+  </ul> 
+</div> 
+{% endblock sidebar %}

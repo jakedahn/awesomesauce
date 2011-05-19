@@ -1,0 +1,315 @@
+{% extends 'objectstore/base.html' %}
+
+{% block main_content %}
+
+  <div id='page_header'> 
+    <h2><span>Object Store:</span> Rings</h2> 
+    <p class='desc'><span>&mdash;</span> Manage Swift Rings.</p> 
+    <a class='more_link' href='#'>More Info</a> 
+    <div id='more'> 
+      <div class='block'> 
+        <h3>Add New Device</h3> 
+        <p>Select an inactive device to be added to a ring.</p> 
+        <a class='fancy_btn' href='#'> 
+          <img alt='Launch' height='17' src='images/button/launch.png' width='16' /> 
+          <span>Add New Device</span> 
+        </a> 
+      </div> 
+      <div class='block'> 
+        <h3>Add New Ring</h3> 
+        <p>Select a group of nodes of which you would like to create a new ring.</p> 
+        <a class='fancy_btn' href='#'> 
+          <img alt='Launch' height='17' src='images/button/launch.png' width='16' /> 
+          <span>Add New Ring</span> 
+        </a> 
+      </div> 
+      <div class='block last'> 
+        <h3>Distribute Ring</h3> 
+        <p>Copy the ring to all swift nodes so they are in sync.</p> 
+        <a class='fancy_btn' href='#'> 
+          <img alt='Launch' height='17' src='images/button/launch.png' width='16' /> 
+          <span>Distribute Ring</span> 
+        </a> 
+      </div> 
+    </div> 
+  </div> 
+  <div class='main_content'> 
+    <div class='table_title wide'> 
+      <h3>Rings</h3> 
+      <div class='search'> 
+        <form action='' method='post'> 
+          <fieldset> 
+            <label for='table_search'>Search</label> 
+            <input id='table_search' name='search' type='text' value='' /> 
+          </fieldset> 
+        </form> 
+      </div> 
+    </div> 
+    <table class='wide'> 
+      <tr> 
+        <th>ID</th> 
+        <th>Weight</th> 
+        <th>Zone</th> 
+        <th>Port</th> 
+        <th>Device</th> 
+        <th>Meta</th> 
+        <th>Actions</th> 
+        <tr class='odd bad'> 
+          <td>ring001</td> 
+          <td>80%</td> 
+          <td>west</td> 
+          <td>11000</td> 
+          <td>sdb1</td> 
+          <td>n/a</td> 
+          <td class='actions'> 
+            <ul> 
+              <li> 
+                <a href='#'>Delete</a> 
+              </li> 
+              <li> 
+                <a href='#'>Edit</a> 
+              </li> 
+              <li> 
+                <a href='#'>Distribute</a> 
+              </li> 
+            </ul> 
+          </td> 
+        </tr> 
+        <tr class='even bad'> 
+          <td>ring001</td> 
+          <td>80%</td> 
+          <td>west</td> 
+          <td>11000</td> 
+          <td>sdb1</td> 
+          <td>n/a</td> 
+          <td class='actions'> 
+            <ul> 
+              <li> 
+                <a href='#'>Delete</a> 
+              </li> 
+              <li> 
+                <a href='#'>Edit</a> 
+              </li> 
+              <li> 
+                <a href='#'>Distribute</a> 
+              </li> 
+            </ul> 
+          </td> 
+        </tr> 
+        <tr class='odd medium'> 
+          <td>ring001</td> 
+          <td>80%</td> 
+          <td>west</td> 
+          <td>11000</td> 
+          <td>sdb1</td> 
+          <td>n/a</td> 
+          <td class='actions'> 
+            <ul> 
+              <li> 
+                <a href='#'>Delete</a> 
+              </li> 
+              <li> 
+                <a href='#'>Edit</a> 
+              </li> 
+              <li> 
+                <a href='#'>Distribute</a> 
+              </li> 
+            </ul> 
+          </td> 
+        </tr> 
+        <tr class='even medium'> 
+          <td>ring001</td> 
+          <td>80%</td> 
+          <td>west</td> 
+          <td>11000</td> 
+          <td>sdb1</td> 
+          <td>n/a</td> 
+          <td class='actions'> 
+            <ul> 
+              <li> 
+                <a href='#'>Delete</a> 
+              </li> 
+              <li> 
+                <a href='#'>Edit</a> 
+              </li> 
+              <li> 
+                <a href='#'>Distribute</a> 
+              </li> 
+            </ul> 
+          </td> 
+        </tr> 
+        <tr class='odd good'> 
+          <td>ring001</td> 
+          <td>80%</td> 
+          <td>west</td> 
+          <td>11000</td> 
+          <td>sdb1</td> 
+          <td>n/a</td> 
+          <td class='actions'> 
+            <ul> 
+              <li> 
+                <a href='#'>Delete</a> 
+              </li> 
+              <li> 
+                <a href='#'>Edit</a> 
+              </li> 
+              <li> 
+                <a href='#'>Distribute</a> 
+              </li> 
+            </ul> 
+          </td> 
+        </tr> 
+        <tr class='even good'> 
+          <td>ring001</td> 
+          <td>80%</td> 
+          <td>west</td> 
+          <td>11000</td> 
+          <td>sdb1</td> 
+          <td>n/a</td> 
+          <td class='actions'> 
+            <ul> 
+              <li> 
+                <a href='#'>Delete</a> 
+              </li> 
+              <li> 
+                <a href='#'>Edit</a> 
+              </li> 
+              <li> 
+                <a href='#'>Distribute</a> 
+              </li> 
+            </ul> 
+          </td> 
+        </tr> 
+        <tr class='odd good'> 
+          <td>ring001</td> 
+          <td>80%</td> 
+          <td>west</td> 
+          <td>11000</td> 
+          <td>sdb1</td> 
+          <td>n/a</td> 
+          <td class='actions'> 
+            <ul> 
+              <li> 
+                <a href='#'>Delete</a> 
+              </li> 
+              <li> 
+                <a href='#'>Edit</a> 
+              </li> 
+              <li> 
+                <a href='#'>Distribute</a> 
+              </li> 
+            </ul> 
+          </td> 
+        </tr> 
+        <tr class='even good'> 
+          <td>ring001</td> 
+          <td>80%</td> 
+          <td>west</td> 
+          <td>11000</td> 
+          <td>sdb1</td> 
+          <td>n/a</td> 
+          <td class='actions'> 
+            <ul> 
+              <li> 
+                <a href='#'>Delete</a> 
+              </li> 
+              <li> 
+                <a href='#'>Edit</a> 
+              </li> 
+              <li> 
+                <a href='#'>Distribute</a> 
+              </li> 
+            </ul> 
+          </td> 
+        </tr> 
+        <tr class='odd good'> 
+          <td>ring001</td> 
+          <td>80%</td> 
+          <td>west</td> 
+          <td>11000</td> 
+          <td>sdb1</td> 
+          <td>n/a</td> 
+          <td class='actions'> 
+            <ul> 
+              <li> 
+                <a href='#'>Delete</a> 
+              </li> 
+              <li> 
+                <a href='#'>Edit</a> 
+              </li> 
+              <li> 
+                <a href='#'>Distribute</a> 
+              </li> 
+            </ul> 
+          </td> 
+        </tr> 
+        <tr class='even good'> 
+          <td>ring001</td> 
+          <td>80%</td> 
+          <td>west</td> 
+          <td>11000</td> 
+          <td>sdb1</td> 
+          <td>n/a</td> 
+          <td class='actions'> 
+            <ul> 
+              <li> 
+                <a href='#'>Delete</a> 
+              </li> 
+              <li> 
+                <a href='#'>Edit</a> 
+              </li> 
+              <li> 
+                <a href='#'>Distribute</a> 
+              </li> 
+            </ul> 
+          </td> 
+        </tr> 
+        <tr class='odd good'> 
+          <td>ring001</td> 
+          <td>80%</td> 
+          <td>west</td> 
+          <td>11000</td> 
+          <td>sdb1</td> 
+          <td>n/a</td> 
+          <td class='actions'> 
+            <ul> 
+              <li> 
+                <a href='#'>Delete</a> 
+              </li> 
+              <li> 
+                <a href='#'>Edit</a> 
+              </li> 
+              <li> 
+                <a href='#'>Distribute</a> 
+              </li> 
+            </ul> 
+          </td> 
+        </tr> 
+        <tr class='even good'> 
+          <td>ring001</td> 
+          <td>80%</td> 
+          <td>west</td> 
+          <td>11000</td> 
+          <td>sdb1</td> 
+          <td>n/a</td> 
+          <td class='actions'> 
+            <ul> 
+              <li> 
+                <a href='#'>Delete</a> 
+              </li> 
+              <li> 
+                <a href='#'>Edit</a> 
+              </li> 
+              <li> 
+                <a href='#'>Distribute</a> 
+              </li> 
+            </ul> 
+          </td> 
+        </tr> 
+      </tr> 
+    </table> 
+  </div> 
+
+{% endblock main_content %}
+
+

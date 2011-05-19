@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block sidebar %}
+<div id='sidebar'> 
+  <div class='search'> 
+    <form accept-charset='utf-8' action='search' method='post'> 
+      <fieldset> 
+        <label for='search_field'>Search</label> 
+        <input id='search_field' name='search' type='text' value='' /> 
+      </fieldset> 
+    </form> 
+  </div> 
+  <h3>Manage Image Service</h3> 
+  <ul class='sub_nav'> 
+    <li><a href='/objectstore_dashboard'>Dashboard</a></li>
+  </ul> 
+</div> 
+{% endblock sidebar %}
