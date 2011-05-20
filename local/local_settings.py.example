@@ -1,0 +1,3 @@
+OSAPI_USER = 'admin'
+OSAPI_KEY = 'admin'
+OSAPI_URL = 'http://localhost:8774/v1.0/'
